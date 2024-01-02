@@ -28,6 +28,11 @@ function Header() {
             <Nav.Link><NavLink to="/">Home</NavLink></Nav.Link>
             <Nav.Link><NavLink to="/products">Products</NavLink></Nav.Link>
             <Nav.Link><NavLink to="/contact">Contact</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/cart">Cart</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/checkout">Checkout</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/faq">FAQ</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/blog">Blog</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/register">Account Register</NavLink></Nav.Link>
             
             
 

@@ -1,14 +1,17 @@
 import React from 'react';
 import HeroSection from '../Components/HeroSection';
-import WorkList from '../Components/WorkList';
 import Featured from '../Components/Featured';
+import ProductList from '../Components/ProductList';
+import BlogList from '../Components/BlogList';
 
 const HomePage = () => {
     return (
         <>
             <HeroSection/>
-            <WorkList/>
+            <ProductList/>
             <Featured/>
+            <BlogList/>
+            
         </>
     );
 };

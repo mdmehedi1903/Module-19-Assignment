@@ -22,3 +22,13 @@ nav a.active {
 .productImg {
     height: 200px;
 }
+
+.product-skeleton {
+    height: 200px;
+    margin-bottom: 15px;
+  }
+
+
+  .hero-img {
+    border-radius: 15px;
+  }

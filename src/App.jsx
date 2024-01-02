@@ -12,6 +12,11 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import ProductPage from './Pages/ProductPage';
 import ContactPage from './Pages/ContactPage';
+import CartPage from './Pages/CartPage';
+import CheckoutPage from './Pages/CheckoutPage';
+import FAQPage from './Pages/FAQPage';
+import BlogArchivePage from './Pages/BlogArchivePage';
+import RegistrationPage from './Pages/AccountRegister';
 
 const App = () => {
   return (
@@ -21,6 +26,11 @@ const App = () => {
           <Route path="/" element={<HomePage/>} />
           <Route path="/products" element={<ProductPage/>} />
           <Route path="/contact" element={<ContactPage/>} />
+          <Route path="/cart" element={<CartPage/>} />
+          <Route path="/checkout" element={<CheckoutPage/>} />
+          <Route path="/faq" element={<FAQPage/>} />
+          <Route path="/blog" element={<BlogArchivePage/>} />
+          <Route path="/register" element={<RegistrationPage/>} />
           <Route path="/team" element={<TeamPage/>} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/project" element={<ProjectPage />} />

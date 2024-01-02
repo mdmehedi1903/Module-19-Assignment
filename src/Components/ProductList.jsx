@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { ProductRequest } from '../APIRequest/apiRequest';
+import SkeletonLoader from './SkeletonLoader';
 
 const ProductList = () => {
   
@@ -20,11 +21,17 @@ const ProductList = () => {
         })()
     },[])
 
-   
+if(data.length===0){
+    return(
+        <>
+            <SkeletonLoader/>
+        </>
+    )
+}else{
     return (
         <div className="container">
           <div className="featured-heading">
-            <h1 className='text-center'>Featured Products</h1>
+            <h1 className='text-center'>Latest Products</h1>
             <h2 className='text-center'>We Provide Best Products</h2>
             <br/>
             <br/>
@@ -54,6 +61,9 @@ const ProductList = () => {
           
         </div>
       );
+}
+   
+
 };
 
 export default ProductList;
