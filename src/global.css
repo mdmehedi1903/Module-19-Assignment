@@ -29,6 +29,6 @@ nav a.active {
   }
 
 
-  .hero-img {
+  .hero-img, .imgradius {
     border-radius: 15px;
   }

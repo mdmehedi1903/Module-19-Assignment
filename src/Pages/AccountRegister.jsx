@@ -1,6 +1,8 @@
 // RegistrationPage.js
 import React, { useState } from 'react';
-import { Container, Form, Button, Alert } from 'react-bootstrap';
+import { Container, Form, Button, Alert, Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import PageTitle from '../Components/PageTitle';
 
 const RegistrationPage = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +25,11 @@ const RegistrationPage = () => {
   };
 
   return (
-    <Container className="mt-5">
+    <>
+       <PageTitle title="Account"/>    
+    <Container className="mt-5">  
+      <Row className="d-flex justify-content-center">
+      <Col md={6}>
       <h1 className="text-center mb-4">Account Registration</h1>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formUsername">
@@ -61,8 +67,13 @@ const RegistrationPage = () => {
             required
           />
         </Form.Group>
-
+        
+        <div>
+          <br/>
+        </div>
+       
         <Button variant="primary" type="submit">
+          
           Register
         </Button>
       </Form>
@@ -72,7 +83,11 @@ const RegistrationPage = () => {
           Registration successful! You can now log in.
         </Alert>
       )}
+      </Col>
+      </Row>
+      
     </Container>
+    </>
   );
 };
 

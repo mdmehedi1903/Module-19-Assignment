@@ -33,6 +33,7 @@ function Header() {
             <Nav.Link><NavLink to="/faq">FAQ</NavLink></Nav.Link>
             <Nav.Link><NavLink to="/blog">Blog</NavLink></Nav.Link>
             <Nav.Link><NavLink to="/register">Account Register</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/error-404">404</NavLink></Nav.Link>
             
             
 

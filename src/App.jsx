@@ -17,6 +17,7 @@ import CheckoutPage from './Pages/CheckoutPage';
 import FAQPage from './Pages/FAQPage';
 import BlogArchivePage from './Pages/BlogArchivePage';
 import RegistrationPage from './Pages/AccountRegister';
+import Error404 from './Pages/Error404';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/faq" element={<FAQPage/>} />
           <Route path="/blog" element={<BlogArchivePage/>} />
           <Route path="/register" element={<RegistrationPage/>} />
+          <Route path="/error-404" element={<Error404/>} />
           <Route path="/team" element={<TeamPage/>} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/project" element={<ProjectPage />} />

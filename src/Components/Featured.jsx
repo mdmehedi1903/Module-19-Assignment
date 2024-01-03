@@ -22,11 +22,12 @@ const Featured = () => {
       </div>
       <Row>
         <Col md={6}>
-          <Image src="https://www.macworld.com/wp-content/uploads/2023/01/apple-products-2018-100782368-orig.jpg?quality=50&strip=all" className="img-fluid" alt="Full width image" />
+          <Image src="https://www.macworld.com/wp-content/uploads/2023/01/apple-products-2018-100782368-orig.jpg?quality=50&strip=all" className="img-fluid imgradius" alt="Full width image" />
           <br />
           <br />
           <p>App Design - June 20, 2022</p>
           <h2>App Redesign</h2>
+          <p>We provide the Perfect Solution to your business growth We provide the Perfect Solution to your business growthWe provide the Perfect Solution to your business growthWe provide the Perfect Solution to your business growthWe provide the Perfect Solution to your business growth We provide the Perfect Solution to your business growth</p>
         </Col>
         <Col md={6}>
           <Row className="g-4">
