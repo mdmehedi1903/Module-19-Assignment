@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 
 const PageTitle = ({ title }) => {
   return (
-    <div className="page-title-container">
-      <Container>
+    <div id="pagetitle" className="page-title-container">
+      <Container id="pagetitle">
         <Breadcrumb>
         <Breadcrumb.Item><NavLink to="/">Home</NavLink></Breadcrumb.Item>
           <Breadcrumb.Item active>{title}</Breadcrumb.Item>

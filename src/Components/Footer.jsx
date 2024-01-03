@@ -1,5 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import '@fortawesome/fontawesome-free/css/all.css'; 
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -41,10 +42,8 @@ const Footer = () => {
           <Col md={4}>
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="text-light nav-link">Services</a></li>
-              <li><a href="#" className="text-light nav-link">Portfolio</a></li>
-              <li><a href="#" className="text-light nav-link">About Us</a></li>
-              <li><a href="#" className="text-light nav-link">Contact Us</a></li>
+              <a className="text-light nav-link" href="/privacy-policy/">Privacy Policy</a>
+              <a className="text-light nav-link" href="/terms-conditions/">Terms & Conditions</a>
             </ul>
           </Col>
 

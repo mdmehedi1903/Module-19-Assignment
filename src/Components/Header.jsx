@@ -34,6 +34,9 @@ function Header() {
             <Nav.Link><NavLink to="/blog">Blog</NavLink></Nav.Link>
             <Nav.Link><NavLink to="/register">Account Register</NavLink></Nav.Link>
             <Nav.Link><NavLink to="/error-404">404</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/thank-you">Thank You</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/review">Review</NavLink></Nav.Link>
+            <Nav.Link><NavLink to="/search-result">Search</NavLink></Nav.Link>
             
             
 

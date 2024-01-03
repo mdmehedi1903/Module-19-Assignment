@@ -18,6 +18,11 @@ import FAQPage from './Pages/FAQPage';
 import BlogArchivePage from './Pages/BlogArchivePage';
 import RegistrationPage from './Pages/AccountRegister';
 import Error404 from './Pages/Error404';
+import ThankYou from './Pages/ThankYou';
+import ReviewPage from './Pages/Reviews';
+import SearchResultsPage from './Components/SearchPage';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
+import TermsConditions from './Pages/TermsConditions';
 
 const App = () => {
   return (
@@ -33,6 +38,11 @@ const App = () => {
           <Route path="/blog" element={<BlogArchivePage/>} />
           <Route path="/register" element={<RegistrationPage/>} />
           <Route path="/error-404" element={<Error404/>} />
+          <Route path="/thank-you" element={<ThankYou/>} />
+          <Route path="/review" element={<ReviewPage/>} />
+          <Route path="/search-result" element={<SearchResultsPage/>} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="/terms-conditions" element={<TermsConditions/>} />
           <Route path="/team" element={<TeamPage/>} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/project" element={<ProjectPage />} />

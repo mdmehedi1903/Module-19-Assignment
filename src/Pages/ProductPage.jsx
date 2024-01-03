@@ -8,7 +8,7 @@ const ProductPage = () => {
     return (
         <> 
             <PageTitle title="Product"/>
-            <ProductList/>
+            <ProductList title="Latest Products!"/>
         </>
     );
 };

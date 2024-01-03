@@ -6,7 +6,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import { ProductRequest } from '../APIRequest/apiRequest';
 import SkeletonLoader from './SkeletonLoader';
 
-const ProductList = () => {
+const ProductList = (props) => {
   
     
     let [data, setData] = useState([]);
@@ -31,7 +31,7 @@ if(data.length===0){
     return (
         <div className="container">
           <div className="featured-heading">
-            <h1 className='text-center'>Latest Products</h1>
+            <h1 className='text-center'>{props.title}</h1>
             <h2 className='text-center'>We Provide Best Products</h2>
             <br/>
             <br/>
@@ -44,7 +44,7 @@ if(data.length===0){
                         
                         <Col md={3} className="mb-4">
                         <Card className='cardControll'>
-                        <Card.Img className='productImg' variant="top" src={item['images'][0]} alt="{title}" />
+                        <Card.Img className='productImg' variant="top" src={item['images'][0]}/>
                         <Card.Body>
                             <Card.Title>{item['title']}</Card.Title>
                             <Card.Text>${item['price']}</Card.Text>
